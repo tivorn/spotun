@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spotun</title>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport"/>
+    <link rel="stylesheet" href="src/main.css"/>
+    <link rel="stylesheet" href="src/navbar.css"/>
+    <link rel="stylesheet" href="src/create-material.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"/>
+
+    <script src="https://kit.fontawesome.com/167e2258b5.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div id="page-create">
+      <header id="site-header">
+        <div id="navbar">
+          <div class="container--left">
+            <div class="menu-section">
+              <div class="menu-toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+              </div>
+            </div>
+            <img src="assets/logo.svg" alt="Logomarca"/>
+            <div class="navbar__item menu-section__dropdown" id="js-navbar__item">
+              <a href="#">Áreas gerais
+                <i class="fas fa-chevron-down"></i>
+              </a>
+              <div id="navbar__item--dropdown">
+                <a href="#">
+                  Negócios, Administração e Direito
+                </a>
+                <a href="#">
+                  Educação
+                </a>
+                <a href="#">
+                  Saúde e Bem-estar
+                </a>
+                <a href="#">
+                  Engenharia, Produção e Construção
+                </a>
+                <a href="#">
+                  Ciências Sociais, Jornalismo e Informação
+                </a>
+                <a href="#">
+                  Computação e Tecnologia da Informação e Comunicação
+                </a>
+                <a href="#">
+                  Agricultura, Silvicultura, Pesca e Veterinária
+                </a>
+                <a href="#">
+                  Artes e Humanidades
+                </a>
+                <a href="#">
+                  Serviços
+                </a>
+                <a href="#">
+                  Ciências Naturais, Matemática e Estatística
+                </a>
+                <a href="#">
+                  Programas Básicos
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container--right">
+            <form action="" class="searchbox-form">
+              <i class="fas fa-search"></i>
+              <input type="search" name="navbar__item--search" placeholder="Buscar material" id=""/>
+            </form>
+
+            <a href="#" class="hero__btn--upload-file">
+              <i class="fas fa-file-import"></i>
+              Salve seu material
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="create-form">
+        <h1>Cadastre seu material</h1>
+        <form action="">
+
+          <fieldset class="material-info">
+            <h2>Dados do material</h2>
+
+            <div class="file-field">
+              <input type="file" name="material__file" id="material__file" class="inputfile">
+              <label for="material__file">
+                <i class="far fa-file"></i>
+                Arquivo do material
+              </label>
+            </div>
+
+            <div class="field">
+              <label for="material__name">Nome do material</label>
+              <input type="text" name="material__name" placeholder="Digite...">
+            </div>
+
+            <div class="field-group">
+              <div class="field">
+
+                <label for="material__course-area" >Área Geral</label>
+                <select name="material__course-area" id="material__course-area" disabled>
+                  <option value="">Selecione a área geral</option>
+                </select>
+
+              </div>
+
+              <div class="field">
+
+                <label for="material__ies-name">Instituição</label>
+                <select name="material__ies-name" id="">
+                  <option value="">Selecione a Instituição</option>
+                </select>
+
+              </div>
+
+            </div>
+
+            <div class="field-group">
+
+              <div class="field">
+                <label for="material__course-name">Curso</label>
+                <select name="material__course-name" id="">
+                  <option value="">Selecione o Curso</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="material__subject-name">Disciplina</label>
+                <input type="text">
+              </div>
+
+            </div>
+          </fieldset>
+
+          <fieldset class="material-type">
+            <div class="legend">
+              <h2>Tipo do material</h2>
+              <h4>Selecione <strong>um</strong> item</h4>
+            </div>
+            
+            <div class="items-grid">
+
+              <li class=selected>
+                <img src="assets/card__question.svg" alt="Lista de exercícios">
+                <span>Lista de exercícios</span>
+              </li>
+
+              <li class=selected>
+                <img src="assets/card__answered-question.svg" alt="Resolução de exercícios">
+                <span>Resolução de exercícios</span>
+              </li>
+
+              <li class=selected>
+                <img src="assets/card__test.svg" alt="Prova">
+                <span>Prova</span>
+              </li>
+
+              <li class=selected>
+                <img src="assets/card__class-notes.svg" alt="Anotações de aula">
+                <span>Anotações de aula</span>
+              </li>
+
+            </div>
+
+            <button type="submit" class="btn__submit-material">Cadastrar</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

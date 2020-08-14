@@ -1,0 +1,173 @@
+.wrapper {
+    margin: 0 40px;
+}
+/* Course info section */
+
+.course-banner {
+    width: 100%;
+    background-color: var(--main-blue);
+    margin-top: 100px;
+    padding: 40px 0;
+    border-radius: 8px;
+}
+
+.course-info {
+    margin: 0 40px;
+    display: flex;
+    align-items: center;
+}
+
+.course-info .course-icon img{
+    width: 100px;
+}
+
+.course-info .course-text {
+    margin-left: 24px;
+}
+
+.course-info .course-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.fa-bookmark {
+    font-size: 24px;
+    color: var(--main-white);
+}
+
+.course-info .course-title h3 {
+    font-size: 38px;
+    font-weight: 500;
+    color: var(--main-white);
+}
+
+.course-info .course-code {
+    font-weight: 300;
+}
+
+.course-info .course-description {
+    font-size: 18px;
+    font-weight: 300;
+    width: 75%;
+    color: var(--main-white);
+    margin-bottom: 16px;
+}
+
+.course-info .available-material {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--main-white);
+}
+
+/* Materials View */
+
+.materials {
+    margin-top: 24px;
+}
+
+.materials .type-material-filter {
+    background-color: var(--main-white);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.type-material-filter__label {
+    font-size: 18px;
+    font-family: "Roboto Slab", serif;
+    margin-right: 10px;    
+}
+
+.type-material-filter__list {
+    display: flex;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.type-material-filter__list li {
+    margin-right: 10px;
+    padding: 5px 13px;
+    border: 1px solid var(--main-black);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.type-material-filter__list li:hover,
+.type-material-filter__list li.selected {
+    border: 1px solid var(--main-blue);
+    color: var(--main-blue);
+}
+
+.material-grid {
+    margin: 24px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.material-grid .material-item {
+    background-color: var(--main-white);
+    display: flex;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.material-item .material-preview {
+    margin-right: 10px;
+    background-color: gray;
+    max-width: 250px;
+    height: 150px;
+    width: 100%;
+    border: 1px solid var(--main-blue);
+    border-radius: 4px;
+}
+
+.material-preview img {
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.material-info {
+    width: 100%;
+}
+
+.material-info__type {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--main-blue);
+    margin-bottom: 10px;
+}
+
+.material-info__title {
+    font-size: 20px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.material-info__subject {
+    font-size: 14px;
+    color: var(--main-blue);
+    border: 1px solid var(--main-blue);
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.material-info__ies {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+    height: 42px;
+}
+
+.material-info__ies img {
+    width: 60px;
+}
+
+
+
+

@@ -1,0 +1,202 @@
+.create-form {
+  margin: 60px 4rem 0px 4rem;
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+}
+
+.create-form h1 {
+  font-size: 2.4rem;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+
+  margin-left: 15px;
+}
+
+.create-form form {
+  display: flex;
+  
+  padding: 2rem;
+}
+
+.create-form fieldset {
+  background-color: var(--main-white);
+  padding: 30px;
+  width: 50%;
+  height: auto;
+  border: none;
+  border-radius: 8px;
+}
+
+fieldset h2 {
+  font-size: 18px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+}
+
+/* Dados do material */
+
+.material-info .file-field {
+  padding: 60px 0;
+  border: 2px dashed #5973f8;
+  border-radius: 4px;
+  margin: 24px 0;
+  text-align: center;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+  color: var(--main-blue);
+}
+
+.material-info .field {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+
+}
+
+.material-info .field input, select {
+  padding: 6px;
+  border: none;
+  background-color: var(--main-gray);
+}
+
+.material-info .field label {
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.field-group {
+  display: flex;
+}
+
+.field-group .field + .field {
+  margin-left: 10px;
+}
+
+/* Tipo do material */
+.material-type {
+  margin-left: 40px; 
+}
+
+.material-type .legend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.material-type .legend h4{
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Roboto Slab", serif;
+  color: var(--main-orange);
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  gap: 30px;
+  justify-content: center;
+}
+
+.items-grid li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  max-width: 150px;
+}
+
+.items-grid li.selected {
+  border: 1px solid var(--main-blue);
+  border-radius: 4px;
+}
+
+.items-grid li img {
+  margin-top: 10px;
+}
+
+.items-grid li span {
+  font-size: 13px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.btn__submit-material {
+  display: flex;
+  margin-left: auto;
+  margin-top: 24px;
+  
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: var(--main-blue);
+  border: none;
+  border-radius: 4px;
+  color: var(--main-white);
+}
+
+/* Media queries */
+
+@media (max-width: 1000px) {
+  .create-form form{
+    flex-direction: column;
+  }
+  .create-form fieldset {
+    width: 100%;
+  }
+
+  .material-type {
+    margin-left: 0;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 50%;
+  }
+
+  .material-type .legend {
+    flex-direction: column;
+  }
+  
+  .items-grid {
+    grid-template-columns: 130px;
+  }
+
+  .items-grid li img {
+    width: 80px;
+  }
+
+  .btn__submit-material {
+    margin-right: auto;
+  }
+
+  .field-group {
+    display: block;
+  }
+
+  .field-group .field + .field {
+    margin-left: 0;
+  }
+}
+
+
+
+

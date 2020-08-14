@@ -1,0 +1,30 @@
+/* Main Colors */
+
+:root {
+  --main-white: #ffffff;
+  --main-black: #000000;
+  --main-gray: #e2e2e2;
+  --main-orange: #f3b133;
+  --main-blue: #304ff2;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+/* Init */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--main-gray);
+  /* overflow: hidden; */
+}
